@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <img src="header-image.jpg" alt="Crop Registration Header Image">
+        <h1>Crop Registration</h1>
+    </header>
+
+    <nav>
+        <!-- Navigation links go here -->
+        <ul>
+            <li><a href="#register">Register Crop</a></li>
+            <li><a href="#view">View Registered Crops</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="register">
+        <h2>Register Your Crop</h2>
+        <img src="crop-image.jpg" alt="Crop Image">
+        <form action="submit_crop.php" method="POST">
+            <label for="cropName">Crop Name:</label>
+            <input type="text" id="cropName" name="cropName" required>
+            
+            <label for="cropType">Crop Type:</label>
+            <input type="text" id="cropType" name="cropType" required>
+            
+            <label for="cropLocation">Location:</label>
+            <input type="text" id="cropLocation" name="cropLocation" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="view">
+        <h2>View Registered Crops</h2>
+        <!-- Display a list of registered crops here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            You can reach us at <a href="mailto:contact@example.com">contact@example.com</a>.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Crop Registration</p>
+    </footer>
+</body>
+</html>
